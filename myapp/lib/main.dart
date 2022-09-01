@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
                 children: [
                   SizedBox(width: 110, height: 350),
                   Card(
-                    child: Text("GOOD MORNING",
+                    child: Text("GOOD EVENING",
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w500,
