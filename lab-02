@@ -1,0 +1,105 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(),
+        body: Container(
+          child: Column(children: [
+            Container(
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      alignment: Alignment.topCenter,
+                      image: NetworkImage(
+                          "https://cdn.pixabay.com/photo/2016/12/16/15/25/christmas-1911637_1280.jpg"))),
+              width: double.infinity,
+              height: 270,
+            ),
+            Center(
+                child: Row(children: [
+              Text("hi"),
+              Container(
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.orange, width: 5)),
+                child: Card(
+                    elevation: 20,
+                    shadowColor: Colors.purple,
+                    child: Text("COFFEE      ",
+                        style: TextStyle(
+                            fontSize: 25, fontWeight: FontWeight.bold))),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.red, width: 5)),
+                child: Card(
+                  elevation: 20,
+                  shadowColor: Colors.yellow,
+                  child: Text("CANDLE  ",
+                      style:
+                          TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+                ),
+              ),
+              Card(
+                color: Colors.blueGrey,
+                child: Text("LETTER",
+                    style:
+                        TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+              )
+            ])),
+            Container(
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      alignment: Alignment.bottomCenter,
+                      image: NetworkImage(
+                          "https://cdn.pixabay.com/photo/2016/12/16/15/25/christmas-1911637_1280.jpg"))),
+              width: 350,
+              height: 270,
+            ),
+            Center(
+                child: Row(children: [
+              Container(
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.orange, width: 5)),
+                child: Card(
+                    elevation: 20,
+                    shadowColor: Colors.purple,
+                    child: Text(
+                      "COFFEE    ",
+                      style:
+                          TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                    )),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.red, width: 5)),
+                child: Card(
+                  elevation: 20,
+                  shadowColor: Colors.yellow,
+                  child: Text("CANDLE      ",
+                      style:
+                          TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+                ),
+              ),
+              Card(
+                color: Colors.blueGrey,
+                child: Text("LETTER",
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                    )),
+              )
+            ]))
+          ]),
+        ),
+      ),
+    );
+  }
+}
