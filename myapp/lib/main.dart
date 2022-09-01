@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(),
         body: Container(
           child: Container(
+            alignment: Alignment.topCenter,
             width: double.infinity,
             height: double.infinity,
             decoration: BoxDecoration(
@@ -33,13 +34,26 @@ class MyApp extends StatelessWidget {
               Container(
                   child: Row(
                 children: [
-                  SizedBox(width: 150, height: 27),
-                  Text(
-                    "SUNRISE",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.blueGrey,
-                        fontWeight: FontWeight.w600),
+                  SizedBox(
+                    width: 150,
+                  ),
+                  Card(
+                    child: Text(
+                      "SUNRISE",
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.blueGrey,
+                          fontWeight: FontWeight.w600),
+                    ),
+                  ),
+                  Card(
+                    child: Text(
+                      "SUNSET",
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.blueGrey,
+                          fontWeight: FontWeight.w600),
+                    ),
                   )
                 ],
               )),
@@ -53,7 +67,9 @@ class MyApp extends StatelessWidget {
               Center(
                   child: Row(
                 children: [
-                  SizedBox(width: 110, height: 350),
+                  SizedBox(
+                    width: 110,
+                  ),
                   Card(
                     child: Text("GOOD EVENING",
                         style: TextStyle(
